@@ -15,10 +15,13 @@
   letter-spacing: -0.01em;
 }
 
+.todo-form-block {
+  margin-bottom: var(--space-2xl);
+}
+
 .todo-form {
   display: flex;
   gap: var(--space-sm);
-  margin-bottom: var(--space-2xl);
 }
 
 .todo-form input {
@@ -42,6 +45,27 @@
 
 .todo-form input:focus-visible {
   border-color: var(--color-focus);
+}
+
+.todo-form input.todo-form__input--error {
+  border-color: var(--color-danger-text);
+  background: var(--color-danger-surface);
+  box-shadow: var(--focus-ring-error);
+}
+
+.todo-form input.todo-form__input--error:hover,
+.todo-form input.todo-form__input--error:focus-visible {
+  border-color: var(--color-danger-text);
+  background: var(--color-danger-surface);
+  box-shadow: var(--focus-ring-error);
+}
+
+.todo-form__error {
+  margin: var(--space-sm) 0 0;
+  min-height: calc(var(--font-size-sm) * var(--line-height-base));
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-base);
+  color: var(--color-danger-text);
 }
 
 .todo-form button {

@@ -17,6 +17,7 @@
   --color-danger-hover: #fef2f2;
   --color-danger-border: #f0c7c7;
   --color-danger-text: #b42318;
+  --color-danger-surface: #fff5f5;
 
   --space-xs: 0.35rem;
   --space-sm: 0.5rem;
@@ -39,6 +40,7 @@
   --line-height-base: 1.5;
   --shadow-panel: 0 1px 2px rgba(16, 24, 40, 0.04), 0 4px 16px rgba(16, 24, 40, 0.06);
   --focus-ring: 0 0 0 3px rgba(37, 99, 235, 0.25);
+  --focus-ring-error: 0 0 0 3px rgba(180, 35, 24, 0.25);
   --transition-fast: 0.15s ease;
 }
 
