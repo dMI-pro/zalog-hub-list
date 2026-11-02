@@ -22,7 +22,6 @@ function App() {
   const [filter, setFilter] = useState<TodoFilterType>('all')
 
   const filteredTodos = filterTodos(todos, filter)
-  const activeCount = todos.filter((todo) => !todo.completed).length
 
   return (
     <main className="app">
@@ -30,7 +29,7 @@ function App() {
       <TodoForm onAdd={addTodo} />
       <div className="todo-toolbar">
         <TodoFilter value={filter} onChange={setFilter} />
-        <p className="todo-count">Активных: {activeCount}</p>
+        <p className="todo-count">Всего: {filteredTodos.length}</p>
       </div>
       <TodoList
         todos={filteredTodos}
