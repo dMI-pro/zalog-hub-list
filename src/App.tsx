@@ -4,18 +4,8 @@ import { TodoFilter } from './components/TodoFilter'
 import { TodoForm } from './components/TodoForm'
 import { TodoList } from './components/TodoList'
 import { useTodos } from './hooks/useTodos'
-import type { Todo, TodoFilter as TodoFilterType } from './types'
-
-function filterTodos(todos: Todo[], filter: TodoFilterType): Todo[] {
-  switch (filter) {
-    case 'active':
-      return todos.filter((todo) => !todo.completed)
-    case 'completed':
-      return todos.filter((todo) => todo.completed)
-    default:
-      return todos
-  }
-}
+import type { TodoFilter as TodoFilterType } from './types'
+import { filterTodos } from './utils/filterTodos'
 
 function App() {
   const { todos, addTodo, toggleTodo, removeTodo } = useTodos()
