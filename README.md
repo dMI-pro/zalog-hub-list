@@ -2,6 +2,8 @@
 
 Тестовое задание для Junior Frontend Developer: список задач на React + TypeScript.
 
+**Демо:** [https://dmi-pro.github.io/zalog-hub-list/](https://dmi-pro.github.io/zalog-hub-list/)
+
 ## Стек
 
 - React + TypeScript
