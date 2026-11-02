@@ -24,6 +24,14 @@ npm run build
 npm run preview
 ```
 
+## Деплой
+
+Проект задеплоен на **GitHub Pages** через **GitHub Actions**.
+
+- workflow: `.github/workflows/deploy.yml`
+- деплой запускается автоматически при пуше в `main`
+- демо: [https://dmi-pro.github.io/zalog-hub-list/](https://dmi-pro.github.io/zalog-hub-list/)
+
 ## Что реализовано
 
 - добавление задачи через поле ввода и кнопку
@@ -33,6 +41,7 @@ npm run preview
 - сохранение задач в `localStorage`
 - валидация: пустую задачу или задачу из пробелов добавить нельзя, показывается ошибка
 - выполненные задачи визуально отличаются от активных
+- деплой на GitHub Pages (GitHub Actions)
 
 ## Время выполнения
 
